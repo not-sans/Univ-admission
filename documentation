@@ -1,0 +1,46 @@
+====================================================
+PROJECT DOCUMENTATION: ADMISSIONS ASSISTANT
+====================================================
+
+1. PURPOSE
+The goal of this project is to simplify college applications. 
+It takes long, confusing university documents and turns them 
+into short, actionable "Buckets of Truth."
+
+2. THE THREE BUCKETS
+The system organizes information into three sections:
+- Hard Gates: GPA, Test scores, and required subjects.
+- The Narrative: What to write about in essays and who should 
+  write recommendation letters.
+- The Logistics: Deadlines and application fees.
+
+3. HOW THE TECHNOLOGY WORKS
+- Python: The core language used to run the script.
+- ScaleDown AI: A machine learning tool that "prunes" (removes) 
+  useless text and keeps only the important facts.
+- OS Module: Handles folders and files on your computer.
+- Dotenv: Keeps your secret API keys safe.
+
+4. PROJECT SETUP
+- "raw_university_data" folder: Put your original text files here.
+- "buckets_of_truth" folder: The assistant puts the finished 
+  summaries here.
+- ".env" file: Stores your ScaleDown API key securely.
+
+5. RUNNING THE SYSTEM
+Step 1: Install requirements (pip install scaledown python-dotenv).
+Step 2: Add university text to the input folder.
+Step 3: Run 'python main.py'.
+Step 4: Read the results in the output folder.
+
+6. TROUBLESHOOTING
+- If it says "ModuleNotFoundError": Run 'pip install scaledown'.
+- If it says "File Not Found": Ensure your folders are named 
+  exactly as shown in the project structure.
+- If it says "AttributeError": Ensure you are using the 
+  'optimize_with_pipeline' method in the code.
+
+7. FUTURE GOALS
+- Create a website dashboard to show these results visually.
+- Add a feature to compare two universities side-by-side.
+====================================================
